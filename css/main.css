@@ -1,0 +1,183 @@
+/* Primary*/
+/*Gradients*/
+/*Neutral*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+main .section-up {
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  margin: auto;
+  font-size: 1.8rem;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 30px 30px;
+}
+main .section-up .section-up--container .title-result {
+  color: hsl(241, 100%, 89%);
+}
+main .section-up .section-up--container .container-score {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  border-radius: 50%;
+  justify-content: center;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+main .section-up .section-up--container .container-score .score {
+  color: hsl(0, 0%, 100%);
+  font-weight: 800;
+  font-size: 6rem;
+}
+main .section-up .section-up--container .container-score .quantity {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.5rem;
+}
+main .section-up .section-up--container .title-congratulations {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+main .section-up .section-up--container .description-score {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+main .section-down {
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+  height: auto;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 15px 30px;
+  margin: auto;
+}
+main .section-down .summary {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+main .section-down .div-summary-type {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main .section-down .div-summary-type .div-group--type-scored {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main .section-down .div-summary-type .div-group--type-scored .reaction-text {
+  color: hsl(0, 100%, 67%);
+}
+main .section-down .div-summary-type .div-group--type-scored .memory-text {
+  color: hsl(39, 100%, 56%);
+}
+main .section-down .div-summary-type .div-group--type-scored .visual-text {
+  color: hsl(234, 85%, 45%);
+}
+main .section-down .div-summary-type .div-group--type-scored .verbal-text {
+  color: hsl(166, 100%, 37%);
+}
+main .section-down .div-summary-type .div-group--type-scored .span-scored span {
+  color: hsl(241, 100%, 89%);
+}
+main .section-down .icon-summary-type {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main .section-down .reaction-icon {
+  background-image: url("../assets/images/icon-reaction.svg");
+}
+main .section-down .memory-icon {
+  background-image: url("../assets/images/icon-memory.svg");
+}
+main .section-down .verbal-icon {
+  background-image: url("../assets/images/icon-verbal.svg");
+}
+main .section-down .visual-icon {
+  background-image: url("../assets/images/icon-visual.svg");
+}
+main .reaction {
+  background-color: hsla(0, 100%, 67%, 0.07);
+}
+main .memory {
+  background-color: hsla(39, 100%, 56%, 0.07);
+}
+main .verbal {
+  background-color: hsla(166, 100%, 37%, 0.07);
+}
+main .visual {
+  background-color: hsla(234, 85%, 45%, 0.07);
+}
+main .section-summary--scored button {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 12px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  margin-top: 20px;
+}
+
+@media (min-width: 1440px) {
+  main {
+    flex-direction: row;
+    height: 100vh;
+  }
+  main .section-up {
+    width: 300px;
+    height: 450px;
+    margin: auto;
+    margin-right: 0;
+    border-radius: 30px;
+    justify-content: center;
+  }
+  main .section-up .section-up--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin: auto;
+  }
+  main .section-down {
+    margin-left: 0;
+    border-radius: 15px;
+    box-shadow: 17px 7px 20px 0px hsl(221, 100%, 96%);
+  }
+  main .section-down button {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
